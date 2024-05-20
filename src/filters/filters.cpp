@@ -237,7 +237,7 @@ bool Filters::removeGlobalFilter(FilterType filterType)
     for (int i = index; i < filters.size() - 1; i++)
     {
         mSoloud->setGlobalFilter(i + 1, 0);
-        mSoloud->setGlobalFilter(i, filters[i+1].filter);
+        mSoloud->setGlobalFilter(i, filters[i + 1].filter);
     }
     /// remove the filter from the list
     filters.erase(filters.begin() + index);

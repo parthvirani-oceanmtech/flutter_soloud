@@ -35,20 +35,23 @@ typedef enum FilterType
     FreeverbFilter
 } FilterType_t;
 
-struct FilterObject {
+struct FilterObject
+{
     FilterType type;
     SoLoud::Filter *filter;
-    bool operator==(FilterType const &i) {
+    bool operator==(FilterType const &i)
+    {
         return (i == type);
     }
 };
 
-class Filters {
+class Filters
+{
     /// TODO(marco): Soloud.setGlobalFilter()
     /// Sets, or clears, the global filter.
     ///
-    /// Setting the global filter to NULL will clear the global filter. 
-    /// The default maximum number of global filters active is 4, but this 
+    /// Setting the global filter to NULL will clear the global filter.
+    /// The default maximum number of global filters active is 4, but this
     /// can be changed in a global constant in soloud.h (and rebuilding SoLoud).
 public:
     Filters(SoLoud::Soloud *soloud);

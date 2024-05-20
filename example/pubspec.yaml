@@ -1,17 +1,17 @@
 name: flutter_soloud_example
 description: Demonstrates how to use the flutter_soloud plugin.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 homepage: https://github.com/alnitak/flutter_soloud
 maintainer: Marco Bavagnoli (@lildeimos)
 
 version: 0.1.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   cupertino_icons: ^1.0.2
-  
+
   #https://pub.dev/packages/ffi
   ffi: ^2.0.2
 
